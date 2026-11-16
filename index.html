@@ -2,383 +2,1506 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aprenda a desenvolver habilidades profissionais, criar seu currículo e se preparar para entrevistas de emprego.">
-  <title>Conecta Profissional | Prepare-se para o futuro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="RepoLab: aprenda a criar, organizar e compartilhar seus projetos digitais utilizando Git e GitHub.">
+
+    <title>RepoLab | Repositório Digital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- =================================
+     CABEÇALHO
+================================= -->
+
 <header class="header">
-  <a href="#inicio" class="brand">
-    <span class="brand-icon">C</span>
-    <span>conecta<span class="brand-light">.</span></span>
-  </a>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    <a href="#inicio" class="logo">
+        <span class="logo-icon">R</span>
+        REPO<span>LAB</span>
+    </a>
 
-  <nav class="navigation" id="navigation">
-    <a href="#inicio">Início</a>
-    <a href="#tecnologia">Tecnologia</a>
-    <a href="#curriculo">Currículo</a>
-    <a href="#entrevista">Entrevista</a>
-    <a href="#carreiras">Carreiras</a>
-  </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        ☰
+    </button>
 
-  <a href="#curriculo" class="header-button">Começar agora <span>→</span></a>
+    <nav class="navigation" id="navigation">
+        <a href="#inicio">Início</a>
+        <a href="#aprenda">Aprenda</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#repositorios">Projetos</a>
+        <a href="#desafio">Desafio</a>
+    </nav>
+
+    <a href="https://github.com/new" target="_blank" rel="noopener noreferrer" class="header-button">
+        Criar repositório ↗
+    </a>
+
 </header>
 
+
 <main>
-  <section class="hero" id="inicio">
+
+<!-- =================================
+     HERO
+================================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-background"></div>
+
     <div class="hero-content">
-      <div class="hero-label">
-        <span class="status-dot"></span>
-        SEU FUTURO PROFISSIONAL COMEÇA AQUI
-      </div>
 
-      <h1>Prepare-se hoje.<br>Conquiste seu <span>amanhã.</span></h1>
-
-      <p>
-        Descubra suas habilidades, desenvolva seu currículo e
-        prepare-se para conquistar novas oportunidades no mercado de trabalho.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#curriculo" class="button-primary">Criar meu currículo <span>→</span></a>
-        <a href="#conteudo" class="button-outline">Explorar conteúdos</a>
-      </div>
-
-      <div class="hero-benefits">
-        <div><span>✓</span> Conteúdo gratuito</div>
-        <div><span>✓</span> Aprendizado prático</div>
-        <div><span>✓</span> Desenvolvimento profissional</div>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="visual-glow"></div>
-
-      <div class="dashboard-card">
-        <div class="dashboard-top">
-          <div>
-            <small>SEU DESENVOLVIMENTO</small>
-            <h3>Jornada profissional</h3>
-          </div>
-          <span class="dashboard-icon">↗</span>
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            SUA JORNADA NO MUNDO DEV COMEÇA AQUI
         </div>
 
-        <div class="progress-info">
-          <span>Seu aprendizado</span>
-          <strong id="heroProgress">0%</strong>
+        <h1>
+            SEUS PROJETOS.
+            <br>
+            SUAS IDEIAS.
+            <br>
+            <span>SEU REPOSITÓRIO.</span>
+        </h1>
+
+        <p>
+            Aprenda a organizar, documentar e compartilhar
+            seus projetos digitais. Descubra como utilizar
+            Git e GitHub para construir seu espaço no mundo
+            da tecnologia.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#aprenda" class="button-primary">
+                Começar a aprender →
+            </a>
+
+            <a href="#repositorios" class="button-secondary">
+                Explorar exemplos
+            </a>
+
+        </div>
+
+        <div class="hero-metadata">
+            <span>01 · ORGANIZAR</span>
+            <span>02 · DESENVOLVER</span>
+            <span>03 · COMPARTILHAR</span>
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="code-window">
+
+            <div class="window-header">
+                <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>meu-primeiro-projeto</span>
+
+                <span class="window-status">PUBLIC</span>
+            </div>
+
+            <div class="file-tree">
+
+                <div class="file-item active">
+                    <span>📁</span>
+                    <span>meu-primeiro-projeto</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>📁</span>
+                    <span>assets</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>📁</span>
+                    <span>css</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>📁</span>
+                    <span>js</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>🌐</span>
+                    <span>index.html</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>🎨</span>
+                    <span>style.css</span>
+                </div>
+
+                <div class="file-item indent">
+                    <span>📄</span>
+                    <span>README.md</span>
+                </div>
+
+            </div>
+
+            <div class="terminal">
+
+                <div class="terminal-title">
+                    <span></span>
+                    TERMINAL
+                </div>
+
+                <p><span class="terminal-green">user@repolab</span>:~$ git add .</p>
+                <p><span class="terminal-green">user@repolab</span>:~$ git commit -m "Meu projeto"</p>
+                <p><span class="terminal-green">user@repolab</span>:~$ git push</p>
+
+                <p class="terminal-success">
+                    ✓ Projeto pronto para compartilhar!
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="floating-card floating-top">
+            <span class="floating-icon">⌘</span>
+            <div>
+                <strong>Git + GitHub</strong>
+                <small>Aprenda na prática</small>
+            </div>
+        </div>
+
+        <div class="floating-card floating-bottom">
+            <span class="floating-icon">✓</span>
+            <div>
+                <strong>Projeto organizado</strong>
+                <small>Pronto para compartilhar</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     INDICADORES
+================================= -->
+
+<section class="statistics">
+
+    <div class="stat-item">
+        <strong>03</strong>
+        <span>Etapas principais</span>
+    </div>
+
+    <div class="stat-item">
+        <strong>06</strong>
+        <span>Conteúdos de aprendizado</span>
+    </div>
+
+    <div class="stat-item">
+        <strong>08</strong>
+        <span>Comandos essenciais</span>
+    </div>
+
+    <div class="stat-item">
+        <strong>100%</strong>
+        <span>Aprendizado prático</span>
+    </div>
+
+</section>
+
+
+<!-- =================================
+     INTRODUÇÃO
+================================= -->
+
+<section class="section introduction" id="aprenda">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">01 / CONHECIMENTO</span>
+
+            <h2>
+                Entenda o universo dos
+                <span>repositórios digitais.</span>
+            </h2>
+
+            <p>
+                Antes de compartilhar seus projetos, é importante
+                conhecer as ferramentas que tornam isso possível.
+            </p>
+        </div>
+
+        <div class="heading-number">
+            01
+        </div>
+
+    </div>
+
+
+    <div class="learning-grid">
+
+        <article class="learning-card">
+
+            <div class="learning-icon blue">⌘</div>
+
+            <span class="card-number">01 — FUNDAMENTOS</span>
+
+            <h3>O que é um repositório?</h3>
+
+            <p>
+                É um espaço onde você armazena e organiza
+                arquivos de um projeto, podendo acompanhar
+                suas alterações e compartilhar seu trabalho.
+            </p>
+
+            <a href="#tutorial">Aprender mais →</a>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon purple">⑂</div>
+
+            <span class="card-number">02 — VERSIONAMENTO</span>
+
+            <h3>Conhecendo o Git</h3>
+
+            <p>
+                O Git é um sistema de controle de versões
+                que permite registrar mudanças, recuperar
+                versões anteriores e organizar o desenvolvimento.
+            </p>
+
+            <a href="#comandos">Ver comandos →</a>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon green">◈</div>
+
+            <span class="card-number">03 — COMPARTILHAMENTO</span>
+
+            <h3>Explorando o GitHub</h3>
+
+            <p>
+                O GitHub permite hospedar repositórios online,
+                colaborar com outras pessoas e apresentar
+                seus projetos para o mundo.
+            </p>
+
+            <a href="#tutorial">Conhecer o processo →</a>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon orange">▤</div>
+
+            <span class="card-number">04 — ORGANIZAÇÃO</span>
+
+            <h3>Estruturando arquivos</h3>
+
+            <p>
+                Organize seus documentos, imagens, códigos
+                e pastas para deixar seus projetos mais
+                claros e fáceis de entender.
+            </p>
+
+            <a href="#repositorios">Ver exemplos →</a>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon cyan">✎</div>
+
+            <span class="card-number">05 — DOCUMENTAÇÃO</span>
+
+            <h3>Criando um README</h3>
+
+            <p>
+                Aprenda a escrever uma apresentação para
+                explicar o objetivo, as funcionalidades
+                e as tecnologias utilizadas no projeto.
+            </p>
+
+            <a href="#documentacao">Ver exemplo →</a>
+
+        </article>
+
+
+        <article class="learning-card">
+
+            <div class="learning-icon pink">↗</div>
+
+            <span class="card-number">06 — PUBLICAÇÃO</span>
+
+            <h3>Compartilhando seu trabalho</h3>
+
+            <p>
+                Descubra como disponibilizar o endereço
+                do seu repositório e apresentar suas
+                criações para outras pessoas.
+            </p>
+
+            <a href="#compartilhar">Aprender a compartilhar →</a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     TUTORIAL
+================================= -->
+
+<section class="tutorial-section" id="tutorial">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">02 / MÃO NA MASSA</span>
+
+            <h2>
+                Seu primeiro repositório
+                <span>passo a passo.</span>
+            </h2>
+
+            <p>
+                Acompanhe o processo de criação de um repositório
+                utilizando o GitHub.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="tutorial-layout">
+
+        <div class="tutorial-steps">
+
+            <article class="tutorial-step">
+
+                <div class="step-number">01</div>
+
+                <div>
+                    <h3>Crie sua conta no GitHub</h3>
+
+                    <p>
+                        Acesse a plataforma GitHub e crie sua conta
+                        para começar a hospedar seus projetos.
+                    </p>
+
+                    <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">
+                        Acessar GitHub →
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="tutorial-step">
+
+                <div class="step-number">02</div>
+
+                <div>
+                    <h3>Crie um novo repositório</h3>
+
+                    <p>
+                        Clique em New repository, escolha um nome
+                        e defina se ele será público ou privado.
+                    </p>
+
+                    <a href="https://github.com/new" target="_blank" rel="noopener noreferrer">
+                        Criar repositório →
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="tutorial-step">
+
+                <div class="step-number">03</div>
+
+                <div>
+                    <h3>Organize seus arquivos</h3>
+
+                    <p>
+                        Adicione seus arquivos HTML, CSS,
+                        JavaScript, imagens e documentos.
+                    </p>
+
+                    <span class="step-detail">Organização e estrutura</span>
+                </div>
+
+            </article>
+
+
+            <article class="tutorial-step">
+
+                <div class="step-number">04</div>
+
+                <div>
+                    <h3>Faça seu primeiro commit</h3>
+
+                    <p>
+                        Registre as alterações realizadas no
+                        projeto para manter o histórico de versões.
+                    </p>
+
+                    <a href="#comandos">Conhecer os comandos →</a>
+                </div>
+
+            </article>
+
+
+            <article class="tutorial-step">
+
+                <div class="step-number">05</div>
+
+                <div>
+                    <h3>Compartilhe seu repositório</h3>
+
+                    <p>
+                        Copie o endereço do repositório e
+                        compartilhe o link com outras pessoas.
+                    </p>
+
+                    <a href="#compartilhar">Ver como compartilhar →</a>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <aside class="tutorial-aside">
+
+            <div class="aside-icon">⌘</div>
+
+            <span class="section-tag">DICA IMPORTANTE</span>
+
+            <h3>Organização faz diferença.</h3>
+
+            <p>
+                Um repositório bem organizado facilita a
+                compreensão do projeto e ajuda outras
+                pessoas a encontrarem o que procuram.
+            </p>
+
+            <div class="aside-divider"></div>
+
+            <div class="aside-feature">
+                <span>✓</span>
+                Nomes claros para os arquivos
+            </div>
+
+            <div class="aside-feature">
+                <span>✓</span>
+                Pastas organizadas
+            </div>
+
+            <div class="aside-feature">
+                <span>✓</span>
+                Documentação atualizada
+            </div>
+
+            <div class="aside-feature">
+                <span>✓</span>
+                Histórico de alterações
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     COMANDOS GIT
+================================= -->
+
+<section class="section commands-section" id="comandos">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">03 / FERRAMENTAS</span>
+
+            <h2>
+                Comandos que todo
+                <span>desenvolvedor conhece.</span>
+            </h2>
+
+            <p>
+                Conheça alguns comandos essenciais do Git.
+                Você pode copiar cada um deles.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="commands-grid">
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>01 / INICIALIZAÇÃO</span>
+                <span class="command-icon">⌘</span>
+            </div>
+
+            <h3>Iniciar repositório</h3>
+
+            <p>Inicializa um novo repositório Git na pasta atual.</p>
+
+            <div class="command-code">
+                <code>git init</code>
+
+                <button class="copy-button" data-copy="git init">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>02 / PREPARAÇÃO</span>
+                <span class="command-icon">▤</span>
+            </div>
+
+            <h3>Adicionar arquivos</h3>
+
+            <p>Prepara as alterações para serem registradas.</p>
+
+            <div class="command-code">
+                <code>git add .</code>
+
+                <button class="copy-button" data-copy="git add .">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>03 / REGISTRO</span>
+                <span class="command-icon">✓</span>
+            </div>
+
+            <h3>Registrar alterações</h3>
+
+            <p>Cria um registro das alterações preparadas.</p>
+
+            <div class="command-code">
+                <code>git commit -m "Meu projeto"</code>
+
+                <button class="copy-button" data-copy='git commit -m "Meu projeto"'>
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>04 / BRANCH</span>
+                <span class="command-icon">⑂</span>
+            </div>
+
+            <h3>Definir branch principal</h3>
+
+            <p>Define o nome da branch principal como main.</p>
+
+            <div class="command-code">
+                <code>git branch -M main</code>
+
+                <button class="copy-button" data-copy="git branch -M main">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>05 / CONEXÃO</span>
+                <span class="command-icon">↔</span>
+            </div>
+
+            <h3>Conectar ao GitHub</h3>
+
+            <p>Conecta o repositório local ao remoto.</p>
+
+            <div class="command-code">
+                <code>git remote add origin URL</code>
+
+                <button class="copy-button" data-copy="git remote add origin URL">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>06 / PUBLICAÇÃO</span>
+                <span class="command-icon">↗</span>
+            </div>
+
+            <h3>Enviar para o GitHub</h3>
+
+            <p>Envia os commits da branch main para o GitHub.</p>
+
+            <div class="command-code">
+                <code>git push -u origin main</code>
+
+                <button class="copy-button" data-copy="git push -u origin main">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>07 / ATUALIZAÇÃO</span>
+                <span class="command-icon">↓</span>
+            </div>
+
+            <h3>Receber atualizações</h3>
+
+            <p>Busca e integra alterações do repositório remoto.</p>
+
+            <div class="command-code">
+                <code>git pull</code>
+
+                <button class="copy-button" data-copy="git pull">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <div class="command-header">
+                <span>08 / CONSULTA</span>
+                <span class="command-icon">◉</span>
+            </div>
+
+            <h3>Consultar status</h3>
+
+            <p>Mostra a situação atual dos arquivos no Git.</p>
+
+            <div class="command-code">
+                <code>git status</code>
+
+                <button class="copy-button" data-copy="git status">
+                    Copiar
+                </button>
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="command-note">
+        <span>ⓘ</span>
+
+        <p>
+            Os comandos são executados no terminal, dentro
+            da pasta do projeto, após instalar e configurar
+            o Git. O comando de conexão exige substituir
+            URL pelo endereço real do seu repositório.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- =================================
+     DOCUMENTAÇÃO
+================================= -->
+
+<section class="documentation-section" id="documentacao">
+
+    <div class="documentation-content">
+
+        <span class="section-tag">04 / DOCUMENTAÇÃO</span>
+
+        <h2>
+            Um bom projeto começa
+            com uma boa <span>apresentação.</span>
+        </h2>
+
+        <p>
+            O README.md é um arquivo utilizado para explicar
+            o funcionamento do projeto. Ele ajuda visitantes
+            a entenderem o que você desenvolveu.
+        </p>
+
+        <div class="documentation-benefits">
+
+            <div>
+                <span>✓</span>
+                Nome e descrição do projeto
+            </div>
+
+            <div>
+                <span>✓</span>
+                Tecnologias utilizadas
+            </div>
+
+            <div>
+                <span>✓</span>
+                Instruções de utilização
+            </div>
+
+            <div>
+                <span>✓</span>
+                Imagens e demonstrações
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="readme-window">
+
+        <div class="readme-top">
+            <span>📄 README.md</span>
+            <span>MARKDOWN</span>
+        </div>
+
+        <div class="readme-content">
+
+            <h3># Meu Primeiro Projeto</h3>
+
+            <p>
+                Este projeto foi desenvolvido para
+                apresentar meus conhecimentos em tecnologia.
+            </p>
+
+            <h4>## Tecnologias utilizadas</h4>
+
+            <div class="technology-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <h4>## Funcionalidades</h4>
+
+            <ul>
+                <li>Página inicial responsiva</li>
+                <li>Navegação entre seções</li>
+                <li>Interface interativa</li>
+            </ul>
+
+            <h4>## Autor</h4>
+
+            <p>Desenvolvido por: Seu Nome</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     GALERIA DE REPOSITÓRIOS
+================================= -->
+
+<section class="section repositories-section" id="repositorios">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">05 / INSPIRAÇÃO</span>
+
+            <h2>
+                Conheça exemplos de
+                <span>projetos digitais.</span>
+            </h2>
+
+            <p>
+                Explore diferentes tipos de repositórios
+                e descubra como eles podem ser organizados.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="repository-tools">
+
+        <div class="repository-search">
+            <span>⌕</span>
+
+            <input
+                type="search"
+                id="repositorySearch"
+                placeholder="Pesquisar projetos..."
+                aria-label="Pesquisar projetos"
+            >
+        </div>
+
+        <div class="repository-filters">
+
+            <button class="repo-filter active" data-filter="todos">
+                Todos
+            </button>
+
+            <button class="repo-filter" data-filter="web">
+                Desenvolvimento Web
+            </button>
+
+            <button class="repo-filter" data-filter="python">
+                Python
+            </button>
+
+            <button class="repo-filter" data-filter="design">
+                Design
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="repository-grid" id="repositoryGrid">
+
+        <article class="repository-card" data-category="web">
+
+            <div class="repository-top">
+                <span class="repo-symbol blue">🌐</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Meu primeiro site</h3>
+
+            <p>
+                Um projeto de desenvolvimento web com
+                páginas organizadas e design responsivo.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot html-dot"></span>
+                HTML
+                <span class="technology-dot css-dot"></span>
+                CSS
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Desenvolvimento Web</span>
+                <span>01</span>
+            </div>
+
+        </article>
+
+
+        <article class="repository-card" data-category="python">
+
+            <div class="repository-top">
+                <span class="repo-symbol yellow">🐍</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Automação Python</h3>
+
+            <p>
+                Exemplo de projeto para automatizar
+                tarefas e organizar informações.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot python-dot"></span>
+                Python
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Programação</span>
+                <span>02</span>
+            </div>
+
+        </article>
+
+
+        <article class="repository-card" data-category="design">
+
+            <div class="repository-top">
+                <span class="repo-symbol purple">✦</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Projeto de interface</h3>
+
+            <p>
+                Um exemplo de organização de elementos
+                visuais para uma experiência digital.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot design-dot"></span>
+                UI / UX
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Design</span>
+                <span>03</span>
+            </div>
+
+        </article>
+
+
+        <article class="repository-card" data-category="web">
+
+            <div class="repository-top">
+                <span class="repo-symbol green">▤</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Catálogo de vídeos</h3>
+
+            <p>
+                Uma página para organizar conteúdos
+                audiovisuais por categorias.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot html-dot"></span>
+                HTML
+                <span class="technology-dot js-dot"></span>
+                JavaScript
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Desenvolvimento Web</span>
+                <span>04</span>
+            </div>
+
+        </article>
+
+
+        <article class="repository-card" data-category="python">
+
+            <div class="repository-top">
+                <span class="repo-symbol orange">⌘</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Calculadora digital</h3>
+
+            <p>
+                Projeto de programação para realizar
+                operações matemáticas.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot python-dot"></span>
+                Python
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Programação</span>
+                <span>05</span>
+            </div>
+
+        </article>
+
+
+        <article class="repository-card" data-category="design">
+
+            <div class="repository-top">
+                <span class="repo-symbol pink">◈</span>
+                <span class="visibility">PUBLIC</span>
+            </div>
+
+            <h3>Identidade visual</h3>
+
+            <p>
+                Exemplo de projeto para organizar
+                elementos de uma marca digital.
+            </p>
+
+            <div class="repo-technologies">
+                <span class="technology-dot design-dot"></span>
+                Design
+            </div>
+
+            <div class="repo-footer">
+                <span>⌘ Criatividade</span>
+                <span>06</span>
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="no-repositories hidden" id="noRepositories">
+        <h3>Nenhum projeto encontrado.</h3>
+        <p>Experimente pesquisar outro nome ou categoria.</p>
+    </div>
+
+    <p class="gallery-disclaimer">
+        Os projetos apresentados são exemplos fictícios
+        para fins educacionais.
+    </p>
+
+</section>
+
+
+<!-- =================================
+     COMPARTILHAMENTO
+================================= -->
+
+<section class="sharing-section" id="compartilhar">
+
+    <div class="sharing-content">
+
+        <span class="section-tag">06 / COMPARTILHAMENTO</span>
+
+        <h2>
+            Seu trabalho merece
+            <span>ser compartilhado.</span>
+        </h2>
+
+        <p>
+            Depois de publicar seu repositório, você pode
+            compartilhar o link com colegas, professores,
+            comunidades de tecnologia e possíveis colaboradores.
+        </p>
+
+        <div class="sharing-example">
+
+            <span class="sharing-label">EXEMPLO DE ENDEREÇO</span>
+
+            <div class="sharing-link">
+                <code>github.com/seu-usuario/meu-projeto</code>
+
+                <button
+                    class="copy-button"
+                    data-copy="https://github.com/seu-usuario/meu-projeto"
+                >
+                    Copiar link
+                </button>
+            </div>
+
+        </div>
+
+        <a
+            href="https://github.com/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-primary"
+        >
+            Criar meu repositório ↗
+        </a>
+
+    </div>
+
+    <div class="sharing-visual">
+
+        <div class="share-card">
+
+            <div class="share-card-top">
+                <span class="share-avatar">R</span>
+
+                <div>
+                    <strong>meu-projeto</strong>
+                    <small>Repositório público de exemplo</small>
+                </div>
+
+                <span class="share-public">PUBLIC</span>
+            </div>
+
+            <div class="share-card-content">
+
+                <div><span>📁</span> assets</div>
+                <div><span>📁</span> css</div>
+                <div><span>📁</span> js</div>
+                <div><span>🌐</span> index.html</div>
+                <div><span>📄</span> README.md</div>
+
+            </div>
+
+            <div class="share-card-footer">
+                <span>✓ Repositório organizado</span>
+                <span>↗ Compartilhável</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     SEGURANÇA
+================================= -->
+
+<section class="section security-section" id="seguranca">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">07 / BOAS PRÁTICAS</span>
+
+            <h2>
+                Compartilhe com
+                <span>responsabilidade.</span>
+            </h2>
+
+            <p>
+                Antes de publicar um projeto, confira alguns
+                cuidados importantes.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="security-grid">
+
+        <article class="security-card">
+            <span class="security-icon">🔐</span>
+            <h3>Proteja suas senhas</h3>
+            <p>
+                Nunca coloque senhas, tokens de acesso
+                ou chaves privadas nos arquivos publicados.
+            </p>
+        </article>
+
+        <article class="security-card">
+            <span class="security-icon">👤</span>
+            <h3>Cuide dos dados pessoais</h3>
+            <p>
+                Não publique documentos, endereços,
+                telefones ou informações privadas.
+            </p>
+        </article>
+
+        <article class="security-card">
+            <span class="security-icon">©</span>
+            <h3>Respeite os direitos autorais</h3>
+            <p>
+                Utilize materiais próprios ou recursos
+                cuja licença permita o compartilhamento.
+            </p>
+        </article>
+
+        <article class="security-card">
+            <span class="security-icon">🌐</span>
+            <h3>Escolha a visibilidade correta</h3>
+            <p>
+                Confira se o repositório deve ser público
+                ou privado antes de compartilhar.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     CHECKLIST DE APRENDIZADO
+================================= -->
+
+<section class="progress-section" id="progresso">
+
+    <div class="progress-content">
+
+        <span class="section-tag">08 / SUA EVOLUÇÃO</span>
+
+        <h2>
+            Acompanhe seu
+            <span>aprendizado.</span>
+        </h2>
+
+        <p>
+            Marque as atividades que você já concluiu.
+            Seu progresso ficará salvo neste navegador.
+        </p>
+
+    </div>
+
+
+    <div class="progress-panel">
+
+        <div class="progress-header">
+
+            <div>
+                <span>SEU PROGRESSO</span>
+                <strong id="progressPercentage">0%</strong>
+            </div>
+
+            <span id="progressCount">0 de 6 atividades</span>
+
         </div>
 
         <div class="progress-track">
-          <div class="progress-fill" id="heroProgressBar"></div>
+            <div class="progress-fill" id="progressFill"></div>
         </div>
 
-        <div class="dashboard-items">
-          <div><span class="item-icon blue">01</span><div><strong>Conhecimento digital</strong><small>Explore novas tecnologias</small></div><span class="item-arrow">↗</span></div>
-          <div><span class="item-icon green">02</span><div><strong>Currículo profissional</strong><small>Apresente suas habilidades</small></div><span class="item-arrow">↗</span></div>
-          <div><span class="item-icon orange">03</span><div><strong>Preparação para entrevistas</strong><small>Treine sua comunicação</small></div><span class="item-arrow">↗</span></div>
+
+        <div class="checklist">
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="1">
+                <span class="custom-check"></span>
+                Conheci o que é um repositório digital.
+            </label>
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="2">
+                <span class="custom-check"></span>
+                Entendi a diferença entre Git e GitHub.
+            </label>
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="3">
+                <span class="custom-check"></span>
+                Aprendi a criar um repositório.
+            </label>
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="4">
+                <span class="custom-check"></span>
+                Conheci os comandos essenciais do Git.
+            </label>
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="5">
+                <span class="custom-check"></span>
+                Aprendi a organizar um README.
+            </label>
+
+            <label class="check-item">
+                <input type="checkbox" class="learning-check" value="6">
+                <span class="custom-check"></span>
+                Entendi como compartilhar um projeto.
+            </label>
+
         </div>
 
-        <div class="dashboard-footer">
-          <span class="online-indicator"></span>
-          Seu próximo passo começa agora.
-        </div>
-      </div>
+        <button class="reset-progress" id="resetProgress">
+            Reiniciar progresso ↻
+        </button>
 
-      <div class="floating-card">
-        <span>✦</span>
-        <div><strong>Novas oportunidades</strong><small>Comece a desenvolver seu potencial</small></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="numbers-section">
-    <div><strong>03</strong><span>Pilares de desenvolvimento</span></div>
-    <div><strong>06</strong><span>Áreas profissionais</span></div>
-    <div><strong>100%</strong><span>Foco no aprendizado</span></div>
-    <div><strong>Grátis</strong><span>Acesso aos recursos</span></div>
-  </section>
-
-  <section class="section intro-section" id="conteudo">
-    <div class="section-heading">
-      <span class="section-label">SUA JORNADA</span>
-      <h2>O que você precisa para<br><span>chegar mais longe?</span></h2>
-      <p>Conhecimento, preparação e confiança são fundamentais para construir uma trajetória profissional.</p>
     </div>
 
-    <div class="pillar-grid">
-      <article class="pillar-card">
-        <div class="pillar-icon blue">⌘</div>
-        <span class="card-number">01 / TECNOLOGIA</span>
-        <h3>Domine o mundo digital</h3>
-        <p>Conheça ferramentas digitais, segurança na internet e habilidades tecnológicas valorizadas profissionalmente.</p>
-        <a href="#tecnologia">Explorar conteúdo <span>→</span></a>
-      </article>
+</section>
 
-      <article class="pillar-card">
-        <div class="pillar-icon green">▤</div>
-        <span class="card-number">02 / CURRÍCULO</span>
-        <h3>Apresente seu potencial</h3>
-        <p>Aprenda a organizar suas informações, experiências, formação e habilidades em um currículo profissional.</p>
-        <a href="#curriculo">Criar currículo <span>→</span></a>
-      </article>
 
-      <article class="pillar-card">
-        <div class="pillar-icon orange">◉</div>
-        <span class="card-number">03 / ENTREVISTA</span>
-        <h3>Prepare-se para oportunidades</h3>
-        <p>Pratique perguntas comuns, desenvolva sua comunicação e conheça boas estratégias para entrevistas.</p>
-        <a href="#entrevista">Treinar entrevista <span>→</span></a>
-      </article>
-    </div>
-  </section>
+<!-- =================================
+     DESAFIO
+================================= -->
 
-  <section class="section technology-section" id="tecnologia">
-    <div class="section-heading">
-      <span class="section-label">HABILIDADES DO FUTURO</span>
-      <h2>Tecnologia no <span>mundo profissional.</span></h2>
-      <p>Conheça conhecimentos digitais que podem ajudar você a se destacar.</p>
-    </div>
+<section class="quiz-section" id="desafio">
 
-    <div class="technology-grid">
-      <article class="technology-card">
-        <div class="tech-icon">💻</div>
-        <h3>Informática básica</h3>
-        <p>Aprenda a utilizar computadores, organizar arquivos e trabalhar com ferramentas digitais.</p>
-        <span>Habilidade essencial</span>
-      </article>
+    <div class="quiz-intro">
 
-      <article class="technology-card">
-        <div class="tech-icon">🤖</div>
-        <h3>Inteligência artificial</h3>
-        <p>Conheça aplicações de IA e como utilizar essas ferramentas de forma ética e responsável.</p>
-        <span>Inovação</span>
-      </article>
+        <span class="section-tag">09 / TESTE SEUS CONHECIMENTOS</span>
 
-      <article class="technology-card">
-        <div class="tech-icon">🔐</div>
-        <h3>Segurança digital</h3>
-        <p>Entenda senhas seguras, proteção de dados e cuidados no ambiente digital.</p>
-        <span>Proteção</span>
-      </article>
+        <h2>
+            Você está preparado
+            para compartilhar?
+        </h2>
 
-      <article class="technology-card">
-        <div class="tech-icon">📊</div>
-        <h3>Organização de dados</h3>
-        <p>Conheça planilhas, organização de informações e análise de dados.</p>
-        <span>Produtividade</span>
-      </article>
+        <p>
+            Responda ao desafio e descubra quanto
+            você aprendeu sobre repositórios digitais.
+        </p>
 
-      <article class="technology-card">
-        <div class="tech-icon">🌐</div>
-        <h3>Comunicação digital</h3>
-        <p>Aprenda a utilizar e-mails, reuniões virtuais e plataformas colaborativas.</p>
-        <span>Comunicação</span>
-      </article>
-
-      <article class="technology-card">
-        <div class="tech-icon">🎨</div>
-        <h3>Criatividade digital</h3>
-        <p>Explore ferramentas de criação, design e produção de conteúdo.</p>
-        <span>Criatividade</span>
-      </article>
-    </div>
-  </section>
-
-  <section class="section resume-section" id="curriculo">
-    <div class="section-heading">
-      <span class="section-label">FERRAMENTA PRÁTICA</span>
-      <h2>Construa seu <span>currículo.</span></h2>
-      <p>Preencha seus dados e gere uma versão organizada do seu currículo.</p>
-    </div>
-
-    <div class="resume-layout">
-      <form id="resumeForm" class="resume-form">
-        <div class="form-heading">
-          <span class="form-step">01</span>
-          <div><h3>Informações pessoais</h3><p>Conte um pouco sobre você.</p></div>
+        <div class="quiz-information">
+            <span>06 perguntas</span>
+            <span>•</span>
+            <span>Pontuação automática</span>
+            <span>•</span>
+            <span>Resultado final</span>
         </div>
 
-        <div class="form-grid">
-          <label>Nome completo
-            <input type="text" id="fullName" placeholder="Seu nome" required maxlength="100">
-          </label>
-          <label>E-mail
-            <input type="email" id="email" placeholder="seuemail@exemplo.com" required maxlength="120">
-          </label>
-          <label>Telefone
-            <input type="tel" id="phone" placeholder="(00) 00000-0000" maxlength="25">
-          </label>
-          <label>Cidade / Estado
-            <input type="text" id="location" placeholder="Sua cidade" maxlength="100">
-          </label>
-        </div>
+        <button class="button-primary" id="startQuiz">
+            Iniciar desafio →
+        </button>
 
-        <div class="form-heading second-heading">
-          <span class="form-step">02</span>
-          <div><h3>Objetivo profissional</h3><p>Qual oportunidade você procura?</p></div>
-        </div>
-
-        <label>Objetivo
-          <textarea id="objective" rows="3" placeholder="Descreva sua área de interesse e seus objetivos profissionais." maxlength="600"></textarea>
-        </label>
-
-        <div class="form-heading second-heading">
-          <span class="form-step">03</span>
-          <div><h3>Formação e experiências</h3><p>Inclua sua trajetória de aprendizado.</p></div>
-        </div>
-
-        <label>Escolaridade / Formação
-          <input type="text" id="education" placeholder="Ex.: Ensino médio em andamento" maxlength="200">
-        </label>
-
-        <label>Experiências profissionais
-          <textarea id="experience" rows="4" placeholder="Descreva suas experiências. Se ainda não trabalhou, pode informar projetos, atividades escolares ou voluntariado." maxlength="1200"></textarea>
-        </label>
-
-        <label>Habilidades
-          <textarea id="skills" rows="3" placeholder="Ex.: Comunicação, organização, informática, trabalho em equipe..." maxlength="600"></textarea>
-        </label>
-
-        <label>Cursos complementares
-          <textarea id="courses" rows="3" placeholder="Informe cursos, certificados e aprendizados adicionais." maxlength="600"></textarea>
-        </label>
-
-        <button type="submit" class="button-primary full-button">Gerar meu currículo <span>→</span></button>
-        <p class="form-note">Seus dados são utilizados nesta página para gerar a prévia do currículo.</p>
-      </form>
-
-      <aside class="resume-preview">
-        <div class="preview-header">
-          <span>PRÉVIA DO DOCUMENTO</span>
-          <span class="preview-status">● Ao vivo</span>
-        </div>
-
-        <div class="paper" id="resumePreview">
-          <div class="paper-top">
-            <h2 id="previewName">Seu Nome</h2>
-            <p id="previewContact">seuemail@exemplo.com</p>
-            <p id="previewPhone">Telefone · Cidade / Estado</p>
-          </div>
-          <div class="paper-section">
-            <h3>OBJETIVO PROFISSIONAL</h3>
-            <p id="previewObjective">Seu objetivo profissional aparecerá aqui.</p>
-          </div>
-          <div class="paper-section">
-            <h3>FORMAÇÃO</h3>
-            <p id="previewEducation">Sua formação aparecerá aqui.</p>
-          </div>
-          <div class="paper-section">
-            <h3>EXPERIÊNCIAS</h3>
-            <p id="previewExperience">Suas experiências aparecerão aqui.</p>
-          </div>
-          <div class="paper-section">
-            <h3>HABILIDADES</h3>
-            <p id="previewSkills">Suas habilidades aparecerão aqui.</p>
-          </div>
-          <div class="paper-section">
-            <h3>CURSOS COMPLEMENTARES</h3>
-            <p id="previewCourses">Seus cursos aparecerão aqui.</p>
-          </div>
-        </div>
-
-        <button type="button" class="download-button" id="printResume">↓ Baixar / Imprimir currículo</button>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section interview-section" id="entrevista">
-    <div class="section-heading">
-      <span class="section-label">SIMULADOR DE ENTREVISTA</span>
-      <h2>Treine antes de <span>ser entrevistado.</span></h2>
-      <p>Responda perguntas comuns e aprenda a estruturar suas respostas.</p>
     </div>
 
-    <div class="interview-box">
-      <div class="interview-sidebar">
-        <span class="interview-tag">TREINAMENTO PRÁTICO</span>
-        <h3>Prepare sua próxima entrevista.</h3>
-        <p>Pratique no seu ritmo. Não existe necessidade de decorar respostas: o objetivo é aprender a se comunicar com clareza.</p>
-        <div class="interview-progress">
-          <div><span>Questão</span><strong id="questionNumber">01 / 06</strong></div>
-          <div class="progress-track"><div class="progress-fill" id="interviewProgress"></div></div>
+
+    <div class="quiz-panel hidden" id="quizPanel">
+
+        <div class="quiz-top">
+
+            <span id="quizCounter">PERGUNTA 01 DE 06</span>
+
+            <span id="quizScore">Pontos: 0</span>
+
         </div>
-      </div>
 
-      <div class="interview-main" id="interviewMain">
-        <span class="question-label">PERGUNTA DA ENTREVISTA</span>
-        <h3 id="interviewQuestion">Conte um pouco sobre você.</h3>
-        <textarea id="interviewAnswer" rows="5" placeholder="Escreva como você responderia a essa pergunta..."></textarea>
-        <div class="interview-controls">
-          <button type="button" class="button-outline" id="showTip">Ver orientação</button>
-          <button type="button" class="button-primary" id="nextQuestion">Próxima pergunta →</button>
+        <div class="quiz-progress-track">
+            <div id="quizProgress"></div>
         </div>
-        <div class="interview-tip hidden" id="interviewTip"></div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section careers-section" id="carreiras">
-    <div class="section-heading">
-      <span class="section-label">POSSIBILIDADES PROFISSIONAIS</span>
-      <h2>Explore diferentes <span>carreiras.</span></h2>
-      <p>Conheça algumas áreas e descubra onde seus interesses podem se desenvolver.</p>
-    </div>
+        <h3 id="quizQuestion"></h3>
 
-    <div class="career-grid">
-      <article class="career-card"><span>💻</span><h3>Tecnologia</h3><p>Programação, suporte técnico, desenvolvimento de sistemas e análise de dados.</p></article>
-      <article class="career-card"><span>📈</span><h3>Administração</h3><p>Gestão, organização empresarial, recursos humanos e planejamento.</p></article>
-      <article class="career-card"><span>🎨</span><h3>Design e comunicação</h3><p>Design gráfico, publicidade, produção de conteúdo e comunicação.</p></article>
-      <article class="career-card"><span>🏥</span><h3>Saúde</h3><p>Enfermagem, áreas técnicas, gestão em saúde e atendimento.</p></article>
-      <article class="career-card"><span>⚖️</span><h3>Direito</h3><p>Atuação jurídica, serviços públicos, pesquisa e apoio administrativo.</p></article>
-      <article class="career-card"><span>🔬</span><h3>Ciência e educação</h3><p>Pesquisa, ensino, desenvolvimento científico e projetos educacionais.</p></article>
-    </div>
-  </section>
+        <div class="quiz-options" id="quizOptions"></div>
 
-  <section class="section challenge-section" id="desafio">
-    <div class="challenge-container">
-      <div>
-        <span class="section-label">TESTE SEU CONHECIMENTO</span>
-        <h2>Você está preparado para o <span>mundo profissional?</span></h2>
-        <p>Responda a um pequeno desafio sobre tecnologia, currículo e entrevistas. Descubra o que você já sabe e o que pode melhorar.</p>
-        <button class="button-primary" id="startQuiz">Começar desafio <span>→</span></button>
-      </div>
-      <div class="challenge-decoration"><span>?</span><small>CONHECIMENTO</small><strong>+</strong><small>OPORTUNIDADE</small></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+
+        <button class="button-primary hidden" id="nextQuestion">
+            Próxima pergunta →
+        </button>
+
+        <div class="quiz-result hidden" id="quizResult"></div>
+
     </div>
 
-    <div class="quiz-box hidden" id="quizBox">
-      <div class="quiz-top"><span id="quizCounter">PERGUNTA 1 DE 6</span><span id="quizScore">Pontos: 0</span></div>
-      <div class="progress-track"><div class="progress-fill" id="quizProgress"></div></div>
-      <h3 id="quizQuestion"></h3>
-      <div class="quiz-options" id="quizOptions"></div>
-      <p id="quizFeedback" class="quiz-feedback"></p>
-      <button class="button-primary hidden" id="nextQuiz">Próxima pergunta →</button>
-      <div id="quizResult" class="quiz-result hidden"></div>
-    </div>
-  </section>
+</section>
 
-  <section class="final-cta">
-    <span class="section-label">O FUTURO ESTÁ EM SUAS MÃOS</span>
-    <h2>Seu próximo passo começa <span>com você.</span></h2>
-    <p>Invista no seu aprendizado, desenvolva suas habilidades e esteja preparado para novas oportunidades.</p>
-    <a href="#inicio" class="button-primary">Voltar ao início ↑</a>
-  </section>
+
+<!-- =================================
+     CHAMADA FINAL
+================================= -->
+
+<section class="final-section">
+
+    <div class="final-content">
+
+        <span class="section-tag">SEU PRÓXIMO PASSO</span>
+
+        <h2>
+            Transforme suas ideias
+            em projetos <span>reais.</span>
+        </h2>
+
+        <p>
+            Aprenda, desenvolva, organize e compartilhe.
+            O próximo projeto pode começar agora.
+        </p>
+
+        <a
+            href="https://github.com/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-primary"
+        >
+            Começar no GitHub ↗
+        </a>
+
+    </div>
+
+</section>
+
 </main>
 
+
+<!-- =================================
+     RODAPÉ
+================================= -->
+
 <footer class="footer">
-  <a href="#inicio" class="brand"><span class="brand-icon">C</span> conecta<span class="brand-light">.</span></a>
-  <p>Conectando conhecimento, tecnologia e oportunidades.</p>
-  <small>Projeto educacional desenvolvido com HTML, CSS e JavaScript.</small>
-  <small>© 2026 Conecta Profissional. Todos os direitos reservados.</small>
+
+    <div class="footer-main">
+
+        <div>
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">R</span>
+                REPO<span>LAB</span>
+            </a>
+
+            <p>
+                Aprenda a construir, organizar e compartilhar
+                seus projetos digitais.
+            </p>
+        </div>
+
+        <div class="footer-navigation">
+            <strong>NAVEGAÇÃO</strong>
+            <a href="#inicio">Início</a>
+            <a href="#aprenda">Aprenda</a>
+            <a href="#tutorial">Tutorial</a>
+            <a href="#desafio">Desafio</a>
+        </div>
+
+        <div class="footer-navigation">
+            <strong>RECURSOS</strong>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">Documentação Git</a>
+            <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">GitHub Docs</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <span>© 2026 REPOLAB. Projeto educacional.</span>
+
+        <span>Desenvolvido com HTML, CSS e JavaScript.</span>
+
+        <a href="#inicio">Voltar ao topo ↑</a>
+
+    </div>
+
 </footer>
 
+
+<!-- NOTIFICAÇÃO -->
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <span id="toastMessage">Copiado com sucesso!</span>
+</div>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
